@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="descripion" content="this"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title> Mahalla Automation </title>
     <link rel="icon" href="img-navbar.png">
@@ -28,7 +28,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="profileClk()">Profile</a>
+                            <a class="nav-link" style="cursor: pointer;" onclick="profileClk()">Profile</a>
                         </li>
                         </ul>
                         <div class="d-flex w-100 justify-content-end">
@@ -38,7 +38,7 @@
                             <button type="button" class="btn btn-outline-success mx-2" id="btnLoginNav" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
                             <button class="btn btn-outline-success" id="btnRegNav" type="button" data-bs-toggle="modal" data-bs-target="#modalReg">Register</button>
                             <div id="logoutdiv" style="display: none;" >
-                                <img src="Screenshot 2023-12-27 133328.png" alt="403" class="rounded-circle" id="imgHeader">
+                                <img src="photo.png" alt="photo.png" class="rounded-circle" id="imgHeader">
 
                                 <b id="b">@hamo</b>
                                 <button type="button" id="btnLogoutNav" class="btn btn-outline-danger"onclick="logOUt()">Logout</button>
@@ -58,7 +58,7 @@
 
           <div class="card rounded shadoe">
             <div class="card-header">
-                <img src="img-header.jpeg" alt="404" class="rounded-circle" style="width: 50px; height: 50px;">  
+                <img src="photo.png" alt="photo.png" class="rounded-circle" style="width: 50px; height: 50px;">  
                 <b class="ml-2">@mera</b>
                 <h5 style="color: rgb(111, 111, 111);" class="mt-2"> 9 minute ago</h5>
             </div>
@@ -87,7 +87,7 @@
 
           <div class="card rounded shadoe">
             <div class="card-header">
-                <img src="${author.profile_image}" alt="404" class="rounded-circle" style="width: 50px; height: 50px;">  
+                <img src="photo.png" alt="photo.png" class="rounded-circle" style="width: 50px; height: 50px;">  
                 <b class="ml-2">@mera</b>
                 <h5 style="color: rgb(111, 111, 111);" class="mt-2"> 9 minute ago</h5>
             </div>
@@ -116,7 +116,7 @@
 
           <div class="card rounded shadoe">
             <div class="card-header">
-                <img src="${author.profile_image}" alt="404" class="rounded-circle" style="width: 50px; height: 50px;">  
+                <img src="photo.png" alt="photo.png" class="rounded-circle" style="width: 50px; height: 50px;">  
                 <b class="ml-2">@mera</b>
                 <h5 style="color: rgb(111, 111, 111);" class="mt-2"> 9 minute ago</h5>
             </div>
@@ -141,6 +141,8 @@
                 </div>
             </div>
         </div>
+
+
 
         </div>
     </div>
@@ -271,13 +273,20 @@
 </div>
 
 
+<!-- <div class="spinner-border" style="position: absolute;left: 0px;right: 0px;margin: auto auto; display: flex; justify-content: center;align-items: center; font-size: 10px;"></div> -->
 
+
+<div class="text-center" id="loader" style="width: 120px; height: 120px;background-color: rgb(111, 111, 111);border-radius: 10px; font-size: 20px; position: fixed;top: 0px;bottom: 0px;left: 0;right: 0; margin: auto auto; display: flex; justify-content: center;align-items: center; font-size: 10px;">
+  <div class="spinner-border" role="status" style="width: 80px; height: 80px;color: white;">
+  </div>
+</div>
 
 <div id="alertSuccess" role="alert" class="fade show"></div>
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/axios/dist/axios.js"></script>
-    <script src="main.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="index.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
