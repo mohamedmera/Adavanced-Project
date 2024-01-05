@@ -283,3 +283,9 @@ function profileClk(){
     location = `../Profile/profile.html?postId=${userId}`
 
 }
+
+function LikePost(){
+
+    document.getElementById('LikeBtnClicked').classList = 'btn btn-primary'
+
+}
